@@ -1,0 +1,131 @@
+<?php 
+	// pemanggilan koneksi wajib
+	require '../koneksiDB/koneksi.php';
+	// pemanggilan akun yang akan di simpan di session
+	session_start();
+
+	// mengamankan admin agar tidak bisa masuk apabila tidak login
+	if (!isset($_SESSION['admin'])) {
+		header('Location: ../index.php');
+		exit();
+	}
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- penting dalam menggunakan bootstrap -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AgentDrink</title>
+
+	<!-- digunakan untuk menghubungkan bootstrap, font-awsome, ccs sendiri dan tambahan link untuk font -->
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../dist/css/admin.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+</head>
+<body>
+
+
+	<div class="wrapper">
+
+		<!-- membuat navigasi pada layar utama admin -->
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+		      		<button class="navbar-toggle" aria-expanded="false" aria-controls="sidebarCollapse" aria-label="Toggle navigation" type="button" data-toggle="collapse" data-target=".sidebar-collapse">
+              		<span class="navbar-toggler-icon"></span>
+            		</button>
+    		</div>
+		</nav>
+
+		<!-- membuat tampilan menu pada layar utama -->
+		<aside class="sidebar sidebar-collapse">
+			<div class="menu">
+				<ul class="menu-content">
+					<li>
+						<!-- list pertama home dengan pemanggilan class dan icon di font-awsome -->
+						<a href="index.php?halaman=home"><i class="fa fa-home"></i>
+							<span>Home</span>
+						</a>
+					</li>
+					<li>
+						<!-- list tiga download dengan pemanggilan class dan icon di font-awsome --><a href="index.php?halaman=user_pelanggan"><em class="fa fa-user"></em> <span>Pelangan</span> </a></li>
+					<li>
+						<!-- list tiga download dengan pemanggilan class dan icon di font-awsome -->
+						<!-- Memasukan halamanm pembelian user yang akan ditampilkan --><a href="index.php?halaman=pembelian"><em class="fa fa-download"></em> <span>Pembelian</span> </a></li>
+					<li>
+						<!-- list kedua input dengan pemanggilan class dan icon di font-awsome -->
+						<a href="#">
+							<i class="fa fa-cube"></i>
+							<span>Barang</span>
+							<i class="fa fa-angle-down pull-right"></i>
+						</a>
+						<!-- Membuat ul di dalam list untuk ditampilkan pilihan lain -->
+						<ul>
+							<li><a href="index.php?halaman=tambah_data_barang">Input Barang</a></li>
+							<li><a href="index.php?halaman=data_barang">Data Barang</a></li>
+						</ul>
+					</li>
+					<li>
+						<!-- list keempat data dengan pemanggilan class dan icon di font-awsome -->
+						<a href="index.php?halaman=logout"><i class="fa fa-logout"></i>
+							<span>LogOut</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+
+		<!-- membuat isi konten yang akan ditampilkan di bawah sini -->
+		<content>
+		<section class="content">
+			<div class="inner">
+				<?php 
+					if (isset($_GET['halaman'])) {
+						if ($_GET['halaman'] == "home"){
+							include 'home.php';
+						}elseif ($_GET['halaman'] == "user_pelanggan") {
+							include 'user_pelanggan.php';
+						}
+						elseif ($_GET['halaman'] == "pembelian") {
+							include 'pembelian.php';
+						}
+						elseif ($_GET['halaman'] == "data_barang") {
+							include 'data_barang.php';
+						}
+						elseif ($_GET['halaman'] == "detail") {
+							include 'detail_pembelian.php';
+						}
+						elseif ($_GET['halaman']=="tambah_data_barang") {
+							include 'tambah_data_barang.php';
+						}
+						elseif ($_GET['halaman']=="hapus_data_barang") {
+							include 'hapus_data_barang.php';
+						}
+						elseif ($_GET['halaman']=="ubah_data_barang") {
+							include 'ubah_data_barang.php';
+						}
+						elseif ($_GET['halaman']=="logout") {
+							include 'logout.php';
+						}
+					}
+					else{
+						include 'home.php';
+					}
+				?>
+			</div>
+		</section>
+		</content>
+	</div>
+
+
+
+<!-- script wajib untuk membuka bootstrap dan jquery -->
+<script type="text/javascript" src="../dist/js/jquery.min.js"></script>
+<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../dist/js/admin.js"></script>
+</body>
+</html>

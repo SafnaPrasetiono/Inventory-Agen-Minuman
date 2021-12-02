@@ -1,0 +1,144 @@
+hr{
+	margin-top: 4px;
+}
+.container .box-barang{
+	margin: 0px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+.container .box-barang .thumbnail{
+	border-radius: 4px;
+}
+.container .box-barang .thumbnail:hover{
+	box-shadow: 0 0 5px rgba(5, 5, 5, 0.5);
+}
+.container .box-barang .thumbnail .foto_brg_ctg{
+	width: 100%;
+	height: 200px;
+	display: block;
+	overflow: hidden;
+}
+.container .box-barang .thumbnail .foto_brg_ctg img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-size: cover;
+	padding: auto;
+	margin: auto;
+	-webkit-transition: all 0.5s ease;
+}
+.container .box-barang .thumbnail .caption{
+	display: block;
+	padding: 2px;
+}
+.container .box-barang .thumbnail .nama-produk{
+	width: 100%;
+	height: 25px;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.container .box-barang .thumbnail .nama-produk a{
+	overflow: hidden;
+	text-decoration: none;
+	color: rgb(40,50,50);
+	font-size: 16px;
+}
+.container .box-barang .thumbnail .harga-produk h5{
+	padding: 0px;
+	margin-top: 2px;
+	margin-bottom: 10px;
+	height: auto;
+	color: red;
+}
+@media(max-width: 768px){
+	.container .box-barang .thumbnail .foto_brg_ctg{
+		height: 180px;
+	}
+}
+.container .box-barang .thumbnail .beli-btn{
+	border-radius: 0px;
+	width: 70px;
+	display: block;
+	border: none;
+	background-color: rgba(46, 168, 89, 1);
+}
+.container .box-barang .thumbnail .beli-btn:hover{
+	background-color: rgba(46, 168, 89, 0.7);
+}
+.container .box-barang .thumbnail .beli-btn-habis{
+	border-radius: 0px;
+	width: 70px;
+	display: block;
+	border: none;
+}
+
+
+
+
+/* Rekomendasi produk */
+.container .box-rekomendasi{
+	display: block;
+	position: relative;
+}
+.container .box-rekomendasi a{
+	text-decoration: none;
+}
+.container .box-rekomendasi .foto_brg{
+	width: 100%;
+	height: 240px;
+	display: block;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+.container .box-rekomendasi .foto_brg img{
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.5s ease;
+}
+.container .box-rekomendasi .foto_brg img:hover{
+	transform: scale(1.2);
+}
+.container .box-rekomendasi .title-rekomendasi{
+	display: block;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 0px;
+	margin: 0;
+}
+.container .box-rekomendasi .title-rekomendasi h4{
+	width: 100%;
+	height: 19px;
+	display: block;
+	overflow: hidden;
+	z-index: 99;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.container .box-rekomendasi .title-rekomendasi h5{
+	color: red;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.container .box-rekomendasi .box-slide a{
+	position: relative;
+	display: inline-block;
+	color: rgba(46, 168, 89, 1);
+	background-color: rgb(230,230,230);
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 10px;
+}
+.container .box-rekomendasi .box-slide a:hover{
+	background-color: rgba(46, 168, 89, 1);
+	color: white;
+}
+
+@media(max-width: 768px){
+	.container .box-rekomendasi .foto_brg{
+		height: 140px;
+	}
+}

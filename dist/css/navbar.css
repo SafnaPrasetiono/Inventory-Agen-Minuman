@@ -1,0 +1,95 @@
+/* merubah margin button pada class navbar */
+.box-navbar .navbar{
+	margin-bottom: 0px;
+	border: none;
+	border-radius: 0px;
+	background-color: rgba(58,181,74, 1);
+}
+.box-navbar .navbar .container li>a{
+	color: white;
+}
+.box-navbar .navbar .container li>a:hover{
+	background-color: transparent;
+	color: rgb(230,230,230);
+}
+.box-navbar .navbar .container ul ul{
+	background-color: white;
+	border-radius: 0px;
+}
+.box-navbar .navbar .container ul ul li>a{
+	color: black;
+}
+.box-navbar .navbar .container ul ul li>a:hover{
+	background-color: rgb(200, 200, 200);
+	color: black;
+}
+
+
+/* User */
+.box-navbar .navbar .container .collapse .foto-user{
+	padding: 8px;
+	margin: 0px;
+	font-size: 16px;
+}
+.user-name{
+	top: -5px;
+	position: relative;
+}
+
+.navbar-brand{
+	display: block;
+	width: 180px;
+	height: 60px;
+	margin: 0;
+	padding: 10px;
+}
+.navbar-brand img{
+	width: 100%;
+	height: 100%;
+}
+
+
+.navbar-toggle{
+	margin-top: 12px;
+	margin-right: 6px;
+	margin-left: 0;
+	border: unset;
+	float: right;
+}
+.navbar-toggle .box-ico{
+	display: block;
+	width: 15%;
+	height: 22px;
+	font-size: 24px;
+	padding: 0;
+	margin-top: -2px;
+	color: white;
+}
+
+.navbar-toggle .navigation-cart{
+	display: block;
+	position: absolute;
+	top: -4px;
+	margin-left: 18px;
+	width: 24px;
+	height: 20px;
+	border-radius: 50%;
+	color: white;
+	background-color: green;
+	text-align: center;
+}
+
+.navbar-search .btn-car{
+	border-radius: 0px;
+	border-top: 1px solid gray;
+	border-left: 0px;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+.navbar-search .input-car{
+	border-radius: 0px;
+	border-top: 1px solid gray;
+	border-left: 1px solid gray;
+	border-right: 0px;
+	border-bottom: 1px solid gray;
+}

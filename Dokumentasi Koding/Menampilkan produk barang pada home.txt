@@ -1,0 +1,52 @@
+
+	<!-- membuat kontent2 barang dengan jenis barang susu -->
+	<section class="kontent-barang">
+		<div class="container">
+			<h3>Produk Barang Susu</h3>
+
+			<div class="row">
+				
+				<?php $sql = $koneksi->query("SELECT*FROM barang WHERE jenis_brg='susu' LIMIT 0,4"); ?>
+				<?php while($produk = $sql->fetch_assoc()) : ?>
+				<div class="produk_kontent col-md-3 col-sm-4 col-xs-6">
+					<div class="thumbnail">
+						<div class="foto-brg-kontent">
+							<?php echo '<img src="data:image/jpeg;base64,'.base64_encode( $produk['foto_brg'] ).'"/>'; ?>
+						</div>
+						<div class="caption">
+							<a href="#"><h4><?php echo $produk['nama_brg']; ?></h4></a>
+							<h6><?php echo number_format($produk['harga_brg']); ?></h6>
+						</div>
+					</div>
+				</div>
+				<?php endwhile; ?>
+			</div>
+		</div>
+	</section>
+
+	<hr class="soft">
+
+	<!-- membuat kontent3 barang dengan jenis barang susu -->
+	<section class="kontent-barang">
+		<div class="container">
+			<h3>Produk Barang Kopi</h3>
+
+			<div class="row">
+
+				<?php $sql = $koneksi->query("SELECT*FROM barang WHERE jenis_brg='kopi' LIMIT 0,4"); ?>
+				<?php while($produk = $sql->fetch_assoc()) : ?>
+				<div class="produk_kontent col-md-3 col-sm-4 col-xs-6">
+					<div class="thumbnail">
+						<div class="foto-brg-kontent">
+							<?php echo '<img src="data:image/jpeg;base64,'.base64_encode( $produk['foto_brg'] ).'"/>'; ?>
+						</div>
+						<div class="caption">
+							<a href="#"><h4><?php echo $produk['nama_brg']; ?></h4></a>
+							<h6><?php echo number_format($produk['harga_brg']); ?></h6>
+						</div>
+					</div>
+				</div>
+				<?php endwhile; ?>
+			</div>
+		</div>
+	</section>

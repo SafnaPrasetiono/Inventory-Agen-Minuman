@@ -1,0 +1,78 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* syarat & ketentuan */
+.container .kontent-navbar li>a{
+	color: white;
+	padding-left: 0px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.container .kontent-navbar li>a:hover{
+	background-color: transparent;
+	color: rgb(165, 247, 174);
+}
+
+/*  kontak */
+.container .nav-kontak li>a{
+	color: white;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 0px;
+}
+.container .nav-kontak li>a:hover{
+	color: rgb(165, 247, 174);
+	background-color: transparent;
+}
+.container .nav-kontak li>a i{
+	padding-right: 8px;
+}
+
+.container .kontak{
+	display: block;
+	width: 100%;
+}
+
+/*  folow-use */
+.container .folow-us li>a{
+	float: left;
+	color: white;
+	background-color: gray;
+	border-radius: 8px;
+	width: 40px;
+	height: 40px;
+	margin-right: 6px;
+	text-align: center;
+	padding: 0;
+}
+.container .folow-us li>a i{
+	display: block;
+	height: 100%;
+	padding-top: 6px;
+}
+.container .folow-us li>a:hover{
+	background-color: greenyellow;
+	color: white;
+}
+
+
+.container .box-bank{
+	display: block;
+	width: 100%;
+}
+.container .box-bank img{
+	width: 100px;
+	height: 38px;
+	margin-right: 10px;
+	margin-bottom: 8px;
+}
+@media(max-width: 768px){
+	.container .box-bank img{
+		margin-right: 20px;
+		margin-bottom: 4px;
+		float: left;
+	}
+}

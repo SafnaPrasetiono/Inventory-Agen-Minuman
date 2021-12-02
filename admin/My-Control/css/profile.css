@@ -1,0 +1,19 @@
+.container-fluid .form-group .form-upload{
+    display: block;
+    height: 330px;
+    border-radius: 8px;
+    padding: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    background-color: transparent;
+}
+.container-fluid .form-group #file-input{
+    display: none;
+}
+.container-fluid .form-group .form-upload img{
+    height: 100%;
+    max-width: 100%;
+    margin: auto;
+    z-index: 99;
+}

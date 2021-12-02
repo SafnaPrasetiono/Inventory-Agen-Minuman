@@ -1,0 +1,68 @@
+	<br class="clr">
+	<section class="box-rekomendasi">
+		<h3 class="title text-center">Rekomendasi produk</h3>
+		<div class="carousel slide" id="recommended-item-carousel" data-ride="carousel">
+			<div class="carousel-inner">	
+				<!-- minimal tampilan produk sebanyak 3 di active  -->
+				<div class="item active">
+					<?php $sql = $koneksi->query("SELECT*FROM barang WHERE jumlah_brg > 100 LIMIT 0,4 "); ?>
+					<?php while($produk = $sql->fetch_assoc()) : ?>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<a href="#" class="thumbnail">
+							<div class="foto_brg">
+								<?php echo '<img src="data:image/jpeg;base64,'.base64_encode( $produk['foto_brg'] ).'"/>'; ?>
+							</div>
+							<div class="caption">
+								<h4><?php echo $produk['nama_brg']; ?></h4>
+								<h5><?php echo number_format($produk['harga_brg']); ?></h5>
+							</div>
+						</a>
+					</div>
+					<?php endwhile; ?>
+				</div>
+
+				<!-- tampilan produk yang ada akan di slide ke 2 -->
+				<div class="item">
+					<?php $sql = $koneksi->query("SELECT*FROM barang WHERE jumlah_brg > 100 LIMIT 4,4 "); ?>
+					<?php while($produk = $sql->fetch_assoc()) : ?>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<a href="#" class="thumbnail">
+							<div class="foto_brg">
+								<?php echo '<img src="data:image/jpeg;base64,'.base64_encode( $produk['foto_brg'] ).'"/>'; ?>
+							</div>
+							<div class="caption">
+								<h4><?php echo $produk['nama_brg']; ?></h4>
+								<h6><?php echo number_format($produk['harga_brg']); ?></h6>
+							</div>
+						</a>
+					</div>
+					<?php endwhile; ?>
+				</div>
+
+				<!-- tampilan produk yang akan di slid ke 3 -->
+				<div class="item">
+					<?php $sql = $koneksi->query("SELECT*FROM barang WHERE jumlah_brg > 100 LIMIT 8,4 "); ?>
+					<?php while($produk = $sql->fetch_assoc()) : ?>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<a href="#" class="thumbnail">
+							<div class="foto_brg">
+								<?php echo '<img src="data:image/jpeg;base64,'.base64_encode( $produk['foto_brg'] ).'"/>'; ?>
+							</div>
+							<div class="caption">
+								<h4><?php echo $produk['nama_brg']; ?></h4>
+								<h6><?php echo number_format($produk['harga_brg']); ?></h6>
+							</div>
+						</a>
+					</div>
+					<?php endwhile; ?>
+				</div>
+
+				<a class="left carousel-control" href="#recommended-item-carousel" data-slide="prev">
+					<span class="fa fa-angle-left fa-4x"></span>
+				</a>
+				<a class="right carousel-control" href="#recommended-item-carousel" data-slide="next">
+					<span class="fa fa-angle-right fa-4x"></span>
+				</a>
+			</div>
+		</div>
+	</section>

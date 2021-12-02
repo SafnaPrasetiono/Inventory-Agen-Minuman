@@ -1,0 +1,34 @@
+/*@media(max-width: 768px){
+	.box-table-keranjang{
+		overflow-x: scroll;
+	}
+}*/
+.set-page{
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.container .box-info-keranjang-1{
+	height: 130px;
+}
+.container .box-info-keranjang-2{
+	height: 130px;
+}
+
+.container .foto-brg-keranjang{
+	width: 100px;
+	height: 100px;
+}
+.container .foto-brg-keranjang img{
+	width: 100%;
+	height: 100%;
+}
+@media(max-width: 758px){
+	.container .box-info-keranjang-2{
+		height: auto;
+	}
+	.container .foto-brg-keranjang{
+		width: 140px;
+		height: 80px;
+	}
+
+}

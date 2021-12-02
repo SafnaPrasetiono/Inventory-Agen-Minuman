@@ -1,0 +1,109 @@
+.box-signup{
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  height: auto;
+  display: block;
+  position: absolute;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(230, 230, 230, 0.5);
+  color: black;
+}
+.box-signup .box-title{
+  height: 120px;
+  display: block;
+  text-align: center;
+}
+.box-signup .box-title h1{
+  line-height: 60px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-bottom: 0px;
+}
+.box-signup .box-title p{
+  padding-top: 0px;
+}
+
+/* edit input */
+.box-signup .form-group input{
+  border-radius: 50px;
+  padding-left: 10px;
+  height: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/*  edit button */
+.box-signup .btn-signup{
+  margin-top: 30px;
+}
+.box-signup .btn-signup button{
+  height: 42px;
+  border-radius: 50px;
+}
+.box-signup .btn-login a{
+  height: 42px;
+  border-radius: 50px;
+  line-height: 2;
+}
+
+@media(max-width: 768px) {
+  .box-signup{
+    transform: none;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow-y: hidden;
+    color: black;
+    border-radius: 0px;
+    background-color: rgba(230, 230, 230, 0.3);
+    overflow-y: auto;
+  }
+  .box-signup .box-title{
+    height: 160px;
+  }
+  .box-signup .btn-signup{
+    margin-top: 40px;
+  }
+}
+
+
+ .balon1{
+  display: block;
+  top: 0%;
+  left: 0%;
+  position: fixed;
+  width: 700px;
+  height: 700px;
+  border-radius: 100%;
+  background-color: rgb(94,186,16);
+  transform: translate(-50%, -50%);
+  box-shadow: 20px 20px 20px 0px rgb(134,226,56);
+}
+.balon2{
+  display: block;
+  top: 100%;
+  left: 100%;
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  background-color: orange;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 20px 20px rgb(255,206,87);
+}
+@media(max-width: 768px){
+  .balon1{
+    top: 0px;
+    left: 20%;
+  }
+}

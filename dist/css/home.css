@@ -1,0 +1,76 @@
+.box-rekomen{
+	width: 100%;
+	height: auto;
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgb(250,250,250);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.konten-barang{
+	display: block;
+}
+.produk_kontent{
+	margin: 0px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+.thumbnail{
+	border-radius: 4px;
+}
+.thumbnail:hover{
+	box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+}
+.foto-brg-kontent{
+	width: 100%;
+	height: 270px;
+	display: block;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+.caption-produk a{
+	width: 100%;
+	height: 25px;
+	display: block;
+	overflow: hidden;
+	text-decoration: none;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 18px;
+	color: black;
+}
+.caption-produk a:hover{
+	color: rgba(58,181,74, 1);
+}
+.caption-produk h5{
+	color: red;
+	margin-top: 2px;
+	margin-bottom: 10px;
+}
+@media(max-width: 768px){
+	.foto-brg-kontent{
+		height: 170px;
+	}
+}
+.foto-brg-kontent img{
+	width: 100%;
+	height: 100%;
+}
+.foto-brg-kontent img:hover{
+	-webkit-transition: all 0.5s ease;
+}
+
+
+.box-panel-kategori{
+	border-radius: 0px;
+	border: none;
+}
+
+/* tag informasi tentang web agent drink */
+.box-info-web{
+	background-color: rgba(58,181,74, 0.1);
+	padding-top: 20px;
+	padding-bottom: 20px;
+}

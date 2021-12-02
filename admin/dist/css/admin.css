@@ -1,0 +1,188 @@
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background-color: rgb(235, 235, 235);
+}
+.wrapper{
+	height: 100vh;
+	padding-top: 55px;
+}
+/* merubah margin button pada class navbar */
+.navbar{
+	display: block;
+	margin-bottom: 0px;
+	border: none;
+	border-radius: 0px;
+	z-index: 9;
+	background-color: rgb(60, 190, 81);
+	border-bottom: 4px solid gray;
+}
+.navbar-default .navbar-tanggal{
+	color: white;
+	height: 100%;
+	padding: 7px 35px 6px 35px;
+	float: right;
+	font-size: 16px;
+}
+.navbar-default .navbar-tanggal .nav{
+	display: block;
+	margin-left: 30px;
+}
+.navbar-default .navbar-tanggal .nav li>a{
+	background-color: lightslategray;
+	border-radius: 50px;
+	color: white;
+	border: none;
+	padding: 9px 13px;
+}
+.navbar-default .navbar-tanggal .nav li>a:hover{
+	background-color: green;
+}
+.box-logo{
+    display: block;
+    width: 240px;
+	height: 52px;
+	padding-top: 6px;
+    padding-left: 42px;
+    padding-right: 42px;
+	padding-bottom: 6px;
+	background-color: rgb(30, 160, 51);
+}
+.box-logo img{
+    width: 100%;
+	height: 100%;
+}
+.wrapper .navbar .navbar-header .navbar-toggle{
+	width: 45px;
+	padding: 0px;
+	color: white;
+	font-size: 24px;
+}
+
+@media(max-width: 768px){
+	.navbar{
+		background-color: rgb(30, 160, 51);
+	}
+}
+
+/* mebuat tampilan pada sidebar atau tampilan menu untuk formadmin*/
+.sidebar{
+	width: 240px;
+	height: auto;
+	padding-bottom: 80px;
+	max-height: 140%;
+	z-index: 8;
+	position: fixed;
+	background-color: white;
+}
+.content{
+	margin-left: 250px;
+	margin-top: 6px;
+	margin-right: 10px;
+	top: 8px;
+	position: relative;
+	background-color: white;
+}
+
+/* membuat responsive apa bila form admin ditampikan di layar laptop akan mengecilkan panjang width nya
+jika di tampilkan dalam bentuk handphone makan akan disesuaikan ukurannya*/
+@media(max-width: 768px){
+	.sidebar{
+		top: 40px;
+		width: 100%;
+		position: fixed;
+		height: auto;
+		padding: 0px;
+		margin: 0px;
+		z-index: 999;
+	}
+	.content{
+		margin: 0px;
+		padding: 10px;
+		top: 0px;
+		height: auto;
+		position: unset;
+	}
+	.box-logo{
+		padding-left: 10px;
+		padding-right: 55px;
+	}
+}
+
+.box-navbar{
+	display: block;
+	height: 345px;
+	overflow-y: scroll;
+	scroll-snap-points-y: none;
+}
+.box-profile{
+	width: 100%;
+	display: block;
+	padding-bottom: 0px;
+	position: relative;
+}
+.nav .LogOut-hiden{
+	display: none;
+}
+.box-foto{
+	width: 100%;
+	height: auto;
+	display: block;
+	padding: 35px 38px 20px 38px;
+}
+.box-foto img{
+	width: 100%;
+	height: 100%;
+	border:2px solid gray;
+}
+.box-profile h4{
+    margin: 0px;
+    width: 80%;
+	margin: auto;
+	padding-bottom: 8px;
+	font-size: 20px;
+	text-transform: uppercase;
+    border-bottom: 1px solid gray;
+}
+@media(max-width: 768px){
+	.box-navbar{
+		overflow-y: unset;
+		height: auto;
+	}
+	.box-profile{
+		display: none;
+	}
+	.box-search{
+		display: block;
+	}
+	.nav .LogOut-hiden{
+		display: block;
+	}
+}
+
+
+.box-navbar .nav li>a{
+    padding: 12px;
+	color: green;
+	padding-left: 26px;
+	font-size: 14px;
+	line-height: 32px;
+}
+.box-navbar .nav li>a i{
+	display: block;
+	width: 40px;
+	float: left;
+	margin-right: 8px;
+}
+.box-navbar .nav .nav li>a{
+	padding-left: 50px;
+	font-size: 14px
+}
+
+.main-page{
+    display: block;
+    height: auto;
+    min-height: 585px;
+}

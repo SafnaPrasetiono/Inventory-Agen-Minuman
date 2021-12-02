@@ -1,0 +1,12 @@
+# Allow.htaccess files their full powerAllowOverride All
+
+# Only allow.htaccess files to override Authorization and indexesAllowOverride AuthConfig indexes
+
+# Options + FollowSymLinks
+ RewriteEngine On
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteCond %{REQUEST_FILENAME} !-d
+ RewriteRule ^home index.php?set=home [NC,L]
+ RewriteRule ^cara_belanja index.php?set=cara_belanja [NC,L]
+ RewriteRule ^tentang_kami index.php?set=tentang_kami [NC,L]
+ RewriteRule ^syarat_ketentuan index.php?set=syarat_ketentuan [NC,L]

@@ -1,0 +1,16 @@
+.cara-belanja{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.container .box-cara-belanja{
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container .box-cara-belanja img{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}

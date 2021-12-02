@@ -1,0 +1,20 @@
+/* form-upload */
+.container .form-group .form-upload{
+    display: block;
+    height: 300px;
+    border-radius: 8px;
+    padding: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    background-color: transparent;
+}
+.container .form-group #file-input{
+    display: none;
+}
+.container .form-group .form-upload img{
+    height: 100%;
+    max-width: 100%;
+    margin: auto;
+    z-index: 99;
+}

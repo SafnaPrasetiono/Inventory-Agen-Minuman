@@ -1,0 +1,15 @@
+.container .box-foto{
+    display: block;
+    padding-top: 40px;
+}
+.container .plain-text{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container .location{
+    height: 120px;
+    margin-right: 20px;
+    padding-top: 5px;
+    font-size: 92px;
+}
