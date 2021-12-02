@@ -18,7 +18,5 @@ Pembuatan website ini dibuat dengan menggunakan php dan beberapa framework yang 
 Pembuatan Website dibuat dengan menggunakan metode SDLC (System Development Life Circle) dengan model waterfall. Tahap metode penelitian tersebut adalah sebgai berikut:
 
 <p align="center">
-    <a href="https://travis-ci.org/Inventory-Agen-Minuman/framework">
-        <img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status">
-    </a>
+        <img src="https://github.com/SafnaPrasetiono/Inventory-Agen-Minuman/blob/main/image/SDLC-Waterfall-Model.png" alt="SDLC">
 </p>
